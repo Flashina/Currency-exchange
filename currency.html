@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="/bootstrap-5.2.2-dist/css/bootstrap.css">
+</head>
+
+<body>
+    <div class="container p-5 m-5">
+        <div class=" col-12 col-md-6 sahdow mx-auto">
+            <div class="shadow p-5 border rounded border-warning">
+                <h1 class="text-center text-muted mx-auto mb-5">CURRENCY CONVERTER</h1>
+                <div class="row">
+                    <input type="text" placeholder="Enter Your Currency" id="inpMoney" class="form-control mb-4 me-4 mx-auto shadow">
+                    <!-- <div class="col-12 col-md-6 sahdow mx-auto">
+                        <button onclick="fizzBuzz()" class="btn btn-outline-warning">Check for FIZZBUZZ</button>
+                    </div> -->
+                    <div class="col-12 col-md-6 sahdow mx-auto">
+                        <button onclick="nairaToDollar()" class="btn btn-outline-warning">Naira(#) to Dollar($)</button>
+                        <h6>Rate: #700 to $1</h6>
+                    </div>
+                    <div class="col-12 col-md-6 sahdow mx-auto ">
+                        <button onclick="dollarToNaira()" class="btn btn-outline-secondary">Dollar($) to Naira(#)</button>
+                        <h6>Rate: $1 to #700</h6>
+                    </div>
+                    <div class="col-12 col-md-6 sahdow mx-auto m-3">
+                        <button onclick="nairaToPounds()" class="btn btn-outline-info">Naira(#) to Pounds(£)</button>
+                        <h6>Rate: #800 to £1</h6>
+                    </div>
+                    <div class="col-12 col-md-6 sahdow mx-auto m-3">
+                        <button onclick="poundsToNaira()" class="btn btn-outline-primary">Pounds(£) to Naira(#)</button>
+                        <h6>Rate: £1 to #800</h6>
+                        
+                    </div>
+                    <div class="row mx-auto">
+                        <hr class="shadow mx-auto">
+                        <div id="disp"></div>
+
+                        <hr class="shadow mx-auto">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        inpMoney.value = ""
+        var buga = new Audio("Buga.MP3")
+        function nairaToDollar() {
+            var money = inpMoney.value
+            // var money = prompt("Enter Amount")
+            if (money != null) {
+                // alert(money / 700 + "$")
+                 disp.innerHTML = (`<h4>${("$" + (money / 700).toFixed(3))}</h4>`)
+                buga.play()
+            }
+            inpMoney.value = ""
+        }
+        function dollarToNaira() {
+            var money = inpMoney.value
+            if (money != null) {
+                // alert()
+                disp.innerHTML = (`<h4>${("#" + money * 700)}</h4>`)
+                buga.play()
+            }
+            inpMoney.value =""
+        }
+        function nairaToPounds() {
+            var money = inpMoney.value
+            if (money != null) {
+                // alert(+ )
+                disp.innerHTML = (`<h4>${"£" + (money / 800).toFixed(3) }</h4>`)
+                buga.play()   
+            }
+            inpMoney.value =""
+        }
+        function poundsToNaira() {
+            var money = inpMoney.value
+            if (money != null) {
+                // alert(+ )
+                disp.innerHTML = (`<h4>${"#" + money * 800 }</h4>`)
+                buga.play()
+            }
+            inpMoney.value = ""
+        }
+    </script>
+</body>
+
+</html>
