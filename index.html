@@ -7,12 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Currency Converter</title>
     <link rel="stylesheet" href="bootstrap-5.2.2-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="currency.css">
 </head>
 
 <body>
     <div class="container p-5 m-5">
         <div class=" col-12 col-md-6 sahdow mx-auto">
-            <div class="shadow p-5 border rounded border-warning">
+            <div class="shadow p-5 border rounded border-warning" id="div2">
                 <h1 class="text-center text-muted mx-auto mb-5">CURRENCY CONVERTER</h1>
                 <div class="row">
                     <input type="text" placeholder="Enter Your Currency" id="inpMoney" class="form-control mb-4 me-4 mx-auto shadow">
@@ -21,26 +22,26 @@
                     </div> -->
                     <div class="col-12 col-md-6 sahdow mx-auto">
                         <button onclick="nairaToDollar()" class="btn btn-outline-warning">Naira(#) to Dollar($)</button>
-                        <h6>Rate: #700 to $1</h6>
+                        <h6 class="text-light">Rate: #700 to $1</h6>
                     </div>
                     <div class="col-12 col-md-6 sahdow mx-auto ">
                         <button onclick="dollarToNaira()" class="btn btn-outline-secondary">Dollar($) to Naira(#)</button>
-                        <h6>Rate: $1 to #700</h6>
+                        <h6 class="text-light">Rate: $1 to #700</h6>
                     </div>
                     <div class="col-12 col-md-6 sahdow mx-auto m-3">
                         <button onclick="nairaToPounds()" class="btn btn-outline-info">Naira(#) to Pounds(£)</button>
-                        <h6>Rate: #800 to £1</h6>
+                        <h6 class="text-light">Rate: #800 to £1</h6>
                     </div>
                     <div class="col-12 col-md-6 sahdow mx-auto m-3">
                         <button onclick="poundsToNaira()" class="btn btn-outline-primary">Pounds(£) to Naira(#)</button>
-                        <h6>Rate: £1 to #800</h6>
+                        <h6 class="text-light">Rate: £1 to #800</h6>
                         
                     </div>
                     <div class="row mx-auto">
-                        <hr class="shadow mx-auto">
+                        <hr class="shadow mx-auto text-light">
                         <div id="disp"></div>
 
-                        <hr class="shadow mx-auto">
+                        <hr class="shadow mx-auto text-light">
                     </div>
                 </div>
             </div>
